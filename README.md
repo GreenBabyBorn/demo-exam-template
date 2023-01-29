@@ -2,5 +2,6 @@
 
 1. HTML и CSS код полностью валиден по стандартам W3C
 2. В коде есть комментарии
+3. Есть адаптив
 
 [Демо](https://greenbabyborn.github.io/demo-exam-template/) 
