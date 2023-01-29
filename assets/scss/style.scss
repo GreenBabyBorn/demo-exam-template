@@ -139,7 +139,7 @@ body {
     height: 80px;
     margin-right: 65px;
     width: 120px;
-    background: rgb(233, 233, 233);
+    // background: rgb(233, 233, 233);
     @media (max-width: 1440px) {
       margin-right: 0;
       height: 100%;
@@ -398,9 +398,13 @@ body {
     padding-bottom: 22px;
   }
   &__img {
-    width: 200px;
-    height: 110px;
+    width: 280px;
+    height: 150px;
     margin-bottom: 15px;
+    @media (max-width: 1440px) {
+      width: 200px;
+      height: 110px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -635,13 +639,16 @@ body {
     }
   }
   &__logo {
-    height: 44px;
-    width: 66px;
-    background: rgb(233, 233, 233);
+    height: 80px;
+    width: 120px;
+
+    // background: rgb(233, 233, 233);
     margin-right: 30px;
     @media (max-width: 1440px) {
       margin-right: 0;
       margin-bottom: 15px;
+      height: 44px;
+      width: 66px;
     }
   }
   &__info {
