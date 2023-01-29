@@ -52,7 +52,7 @@ body {
 [class*=__container] {
   width: 1440px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 22px;
 }
 @media (max-width: 1440px) {
   [class*=__container] {
@@ -68,7 +68,7 @@ body {
 }
 @media (max-width: 1440px) {
   .header {
-    height: 90px;
+    height: 70px;
   }
 }
 .header__btn {
@@ -78,6 +78,7 @@ body {
   height: 30px;
   flex: 0 0 auto;
   z-index: 50;
+  margin-bottom: 5px;
 }
 @media (max-width: 1440px) {
   .header__btn {
@@ -122,7 +123,7 @@ body {
   display: flex;
   height: 100%;
   align-items: center;
-  border: 5px solid black;
+  border: 3px solid black;
   position: relative;
   background: white;
 }
@@ -141,6 +142,8 @@ body {
 @media (max-width: 1440px) {
   .header__logo {
     margin-right: 0;
+    height: 100%;
+    width: 95px;
   }
 }
 .header__menu {
@@ -154,7 +157,7 @@ body {
     left: 0;
     width: 100%;
     background: rgb(233, 233, 233);
-    outline: 5px solid black;
+    outline: 3px solid black;
     transition: all 0.3s ease 0s;
     z-index: -1;
   }
@@ -167,12 +170,15 @@ body {
     gap: 0;
   }
   .header__menu .menu__item {
-    padding: 20px 0;
+    padding: 15px 0;
     width: 100%;
     text-align: center;
   }
   .header__menu .menu__item:not(:first-child) {
     border-top: black 3px solid;
+  }
+  .header__menu .menu__link {
+    font-size: 16px;
   }
 }
 @media (max-width: 1440px) {
@@ -188,12 +194,16 @@ body {
 .auth {
   display: flex;
 }
+.page {
+  min-width: 0;
+}
+
 .welcome {
   margin-top: 45px;
 }
 @media (max-width: 1440px) {
   .welcome {
-    margin-top: 30px;
+    margin-top: 22px;
   }
 }
 .welcome__container {
@@ -203,7 +213,7 @@ body {
 @media (max-width: 1440px) {
   .welcome__container {
     flex-direction: column;
-    gap: 30px;
+    gap: 22px;
   }
 }
 .welcome__img {
@@ -223,10 +233,16 @@ body {
     text-align: center;
   }
   .welcome__img img {
-    height: 150px;
-    width: 210px;
+    height: 110px;
+    width: 164px;
   }
 }
+@media (max-width: 1440px) {
+  .welcome__content {
+    font-size: 16px;
+  }
+}
+
 .cards {
   margin-top: 60px;
 }
@@ -252,7 +268,7 @@ body {
   flex: 0 1 660px;
   flex-direction: column;
   padding: 30px;
-  border: 5px solid black;
+  border: 3px solid black;
 }
 .card:nth-child(2) {
   padding-left: 50px;
@@ -272,6 +288,11 @@ body {
   font-size: 32px;
   font-weight: 400;
 }
+@media (max-width: 1440px) {
+  .card__title {
+    font-size: 25px;
+  }
+}
 .card__list {
   margin-top: 60px;
   display: flex;
@@ -280,7 +301,8 @@ body {
 }
 @media (max-width: 1440px) {
   .card__list {
-    margin-top: 30px;
+    margin-top: 20px;
+    gap: 20px;
   }
 }
 .card__list-item::before {
@@ -289,17 +311,37 @@ body {
   width: 30px;
   padding-right: 10px;
 }
+@media (max-width: 1440px) {
+  .card__list-item {
+    font-size: 16px;
+  }
+}
 
 .news {
   margin-top: 45px;
+}
+@media (max-width: 1440px) {
+  .news {
+    margin-top: 22px;
+  }
 }
 .news__top {
   text-align: center;
   margin-bottom: 30px;
 }
+@media (max-width: 1440px) {
+  .news__top {
+    margin-bottom: 20px;
+  }
+}
 .news__title {
   font-weight: normal;
   font-size: 32px;
+}
+@media (max-width: 1440px) {
+  .news__title {
+    font-size: 26px;
+  }
 }
 .news__bottom {
   display: flex;
@@ -308,8 +350,13 @@ body {
   flex-wrap: wrap;
 }
 @media (max-width: 1440px) {
+  .news__bottom {
+    gap: 22px;
+  }
+}
+@media (max-width: 1440px) {
   .news__item {
-    min-width: 420px;
+    width: 420px;
   }
 }
 .news__more {
@@ -327,8 +374,8 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  border: 5px solid black;
-  min-width: 420px;
+  border: 3px solid black;
+  width: 420px;
   font-size: 24px;
   height: 45px;
   background: rgb(233, 233, 233);
@@ -344,18 +391,19 @@ body {
   flex-direction: column;
   align-items: center;
   flex: 1 1 420px;
-  border: 5px solid black;
+  border: 3px solid black;
   padding-top: 30px;
   padding-bottom: 120px;
 }
 @media (max-width: 1440px) {
   .news-item {
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 22px;
   }
 }
 .news-item__img {
-  width: 275px;
-  height: 150px;
+  width: 200px;
+  height: 110px;
   margin-bottom: 15px;
 }
 .news-item__img img {
@@ -369,8 +417,8 @@ body {
 }
 @media (max-width: 480px) {
   .news-item__title {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 21px;
+    margin-bottom: 10px;
   }
 }
 .news-item__text {
@@ -378,8 +426,10 @@ body {
 }
 @media (max-width: 1440px) {
   .news-item__text {
+    font-size: 16px;
     align-self: flex-start;
-    padding-left: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 
@@ -388,7 +438,7 @@ body {
 }
 @media (max-width: 1440px) {
   .partners {
-    margin-top: 30px;
+    margin-top: 22px;
   }
 }
 .partners__container {
@@ -404,7 +454,8 @@ body {
 }
 @media (max-width: 1440px) {
   .partners__title {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
+    font-size: 26px;
   }
 }
 .partners__bottom {
@@ -412,11 +463,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 60px;
+  gap: 44px;
 }
 @media (max-width: 1440px) {
   .partners__bottom {
-    padding: 0 60px;
+    padding: 0 44px;
     row-gap: 10px;
   }
 }
@@ -427,6 +478,13 @@ body {
 }
 .partners__img {
   width: 150px;
+  height: 90px;
+}
+@media (max-width: 1440px) {
+  .partners__img {
+    width: 94px;
+    height: 70px;
+  }
 }
 .partners__img img {
   width: 100%;
@@ -439,7 +497,7 @@ body {
 }
 @media (max-width: 1440px) {
   .comments {
-    margin-top: 30px;
+    margin-top: 22px;
   }
 }
 .comments__container {
@@ -447,7 +505,7 @@ body {
 }
 @media (max-width: 1440px) {
   .comments__container {
-    padding: 0 30px;
+    padding: 0 22px;
   }
 }
 .comments__top {
@@ -460,13 +518,14 @@ body {
 }
 @media (max-width: 1440px) {
   .comments__title {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
+    font-size: 26px;
   }
 }
 .comments__items {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 22px;
 }
 
 .form-comments__top {
@@ -483,7 +542,7 @@ body {
   flex: 1 0 auto;
   height: 105px;
   width: 105px;
-  border: 4px solid gray;
+  border: 3px solid gray;
 }
 @media (max-width: 1440px) {
   .form-comments__img {
@@ -496,18 +555,19 @@ body {
   object-fit: contain;
 }
 .form-comments__textarea {
-  border: 5px solid black;
+  border: 3px solid black;
   font-family: inherit;
   font-size: 18px;
   padding-top: 40px;
-  padding-left: 10px;
+  padding-left: 5px;
   width: 100%;
   resize: none;
 }
 @media (max-width: 1440px) {
   .form-comments__textarea {
     padding: 5px;
-    max-height: 60px;
+    max-height: 44px;
+    font-size: 16px;
   }
 }
 .form-comments__bottom {
@@ -515,13 +575,18 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 1440px) {
+  .form-comments__bottom {
+    margin-top: 11px;
+  }
+}
 .form-comments__button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  border: 5px solid black;
-  min-width: 150px;
+  border: 3px solid black;
+  width: 150px;
   font-size: 18px;
   height: 30px;
   background: rgb(233, 233, 233);
@@ -538,11 +603,16 @@ body {
   grid-template-areas: "img title" "img text";
   grid-column-gap: 15px;
 }
+@media (max-width: 1440px) {
+  .comments-item {
+    margin-left: 0px;
+  }
+}
 .comments-item__img {
   grid-area: img;
   width: 50px;
   height: 50px;
-  border: 4px solid gray;
+  border: 3px solid gray;
 }
 .comments-item__img img {
   width: 100%;
@@ -569,13 +639,13 @@ body {
 }
 @media (max-width: 1440px) {
   .footer {
-    margin-top: 30px;
+    margin-top: 22px;
   }
 }
 .footer__container {
   display: flex;
   align-items: center;
-  border: 5px solid black;
+  border: 3px solid black;
   padding: 30px 90px 30px 30px;
 }
 @media (max-width: 1440px) {
@@ -588,15 +658,15 @@ body {
   }
 }
 .footer__logo {
-  height: 80px;
-  width: 120px;
+  height: 44px;
+  width: 66px;
   background: rgb(233, 233, 233);
   margin-right: 30px;
 }
 @media (max-width: 1440px) {
   .footer__logo {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 1440px) {
