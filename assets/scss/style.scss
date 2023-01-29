@@ -195,12 +195,20 @@ body {
   &__item {
   }
   &__link {
+    transition: color 0.2s ease 0s;
+    &:hover {
+      color: var(--third-color);
+    }
   }
 }
 .auth {
   display: flex;
 
   &__link {
+    transition: color 0.2s ease 0s;
+    &:hover {
+      color: var(--third-color);
+    }
   }
   &__sep {
   }
@@ -369,6 +377,11 @@ body {
     background: rgb(233, 233, 233);
     @media (max-width: 1440px) {
       display: none;
+    }
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: white;
+      background: #32a64f;
     }
   }
 }
@@ -560,6 +573,12 @@ body {
     background: rgb(233, 233, 233);
     @media (max-width: 1440px) {
       display: none;
+    }
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: white;
+      background: #32a64f;
     }
   }
 }
