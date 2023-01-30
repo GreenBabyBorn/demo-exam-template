@@ -193,6 +193,10 @@ body {
   }
   &__link {
     transition: color 0.2s ease 0s;
+    @media (max-width: 1440px) {
+      width: 100%;
+      display: inline-block;
+    }
     &:hover {
       color: var(--third-color);
     }
@@ -573,6 +577,9 @@ body {
     font-size: 18px;
     height: 30px;
     background: rgb(233, 233, 233);
+    @media (min-width: 1440px) {
+      margin-bottom: -10px;
+    }
     @media (max-width: 1440px) {
       display: none;
     }
